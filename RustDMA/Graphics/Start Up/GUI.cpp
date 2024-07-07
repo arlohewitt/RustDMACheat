@@ -67,7 +67,7 @@ void CreateGUI()
 				convaradmin->ClearVisionInWater(true);
 		});
 	form->Push(watereffect);
-	auto adminflag = std::make_shared<Toggle>(10, 135, LIT(L"Admin Flag"), &ConfigInstance.Misc.AdminFlag);
+	auto adminflag = std::make_shared<Toggle>(10, 135, LIT(L"Camera Debug"), &ConfigInstance.Misc.AdminFlag);
 	form->Push(adminflag);
 	auto changetime = std::make_shared<Toggle>(10, 155, LIT(L"Change Time"), &ConfigInstance.Misc.ChangeTime);
 	changetime->SetValueChangedEvent([]()

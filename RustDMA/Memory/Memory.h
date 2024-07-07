@@ -1,5 +1,9 @@
 #pragma once
 #include "pch.h"
+#include "InputManager.h"
+#include "Registry.h"
+#include "Shellcode.h"
+#include "../nt/structs.h"
 
 class Memory
 {
@@ -41,6 +45,13 @@ private:
 	*/
 	bool SetFPGA();
 
+
+	//shared pointer
+
+	std::shared_ptr<c_keys> key;
+	c_registry registry;
+	c_shellcode shellcode;
+
 	/*this->registry_ptr = std::make_shared<c_registry>(*this);
 	this->key_ptr = std::make_shared<c_keys>(*this);*/
 
@@ -51,6 +62,11 @@ public:
 	 */
 	Memory();
 	~Memory();
+
+
+	c_registry GetRegistry() { return registry; }
+
+	c_keys* GetKeyboard() { return key.get(); }
 
 	/**
 	* brief Initializes the DMA

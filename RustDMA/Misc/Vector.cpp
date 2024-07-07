@@ -30,6 +30,27 @@ Vector2 Vector2::operator-(Vector2 a)
     return Vector2(x - a.x, y - a.y);
 }
 
+Vector3& Vector3::operator+=(const Vector3& rhs) {
+    x += rhs.x;
+    y += rhs.y;
+    z += rhs.z;
+    return *this;
+}
+
+Vector3& Vector3::operator-=(const Vector3& rhs) {
+    x -= rhs.x;
+    y -= rhs.y;
+    z -= rhs.z;
+    return *this;
+}
+
+Vector3& Vector3::operator*=(float scalar) {
+    x *= scalar;
+    y *= scalar;
+    z *= scalar;
+    return *this;
+}
+
 bool Vector2::operator==(Vector2 a)
 {
     return x == a.x && y == a.y;

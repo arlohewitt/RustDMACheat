@@ -37,6 +37,9 @@ public:
 	Vector3 operator /(float f);
 	Vector3 operator +(Vector3 a);
 	Vector3 operator -(Vector3 a);
+	Vector3& operator+=(const Vector3& rhs);
+	Vector3& operator-=(const Vector3& rhs);
+	Vector3& operator*=(float scalar);
 	bool operator ==(Vector3 a);
 	bool operator !=(Vector3 a);
 

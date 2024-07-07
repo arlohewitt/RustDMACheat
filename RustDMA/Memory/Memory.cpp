@@ -21,6 +21,8 @@ Memory::Memory()
 		DebugBreak();
 	}
 
+	this->key = std::make_shared<c_keys>();
+
 	LOG("Successfully loaded libraries!\n");
 }
 

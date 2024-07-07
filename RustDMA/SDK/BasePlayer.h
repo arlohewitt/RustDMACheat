@@ -60,7 +60,7 @@ class BasePlayer
   "Name": "BasePlayer_TypeInfo",
   "Signature": "BasePlayer_c*"
 */
-	uint64_t StaticClass = 0x3C729E8;
+	uint64_t StaticClass = 0x3C73B60; // 3C8 CE48
 	uint64_t Class = 0;
 	uint64_t PlayerFlag = 0xA88; // 	public global::BasePlayer.PlayerFlags playerFlags;
 	uint64_t BaseMovementOffset = 0x860; // public BaseMovement movement;

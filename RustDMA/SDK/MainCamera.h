@@ -7,7 +7,7 @@ class MainCamera
 	  "Name": "MainCamera_TypeInfo",
 	  "Signature": "MainCamera_c*"
 	*/
-	uint64_t Class = 0x3C5DE00;
+	uint64_t Class = 0x3C5EEE8; // 3C6 E1C8
 	//Dump.cs / DummyDLL
 	uint64_t StaticField = 0xB8;// Static Padding To Access Static Fields
 	uint64_t Camera = 0x0;// public static Camera mainCamera

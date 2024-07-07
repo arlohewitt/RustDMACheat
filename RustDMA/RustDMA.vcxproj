@@ -190,7 +190,10 @@
     <ClCompile Include="Graphics\Utility\Colour.cpp" />
     <ClCompile Include="Graphics\Utility\Font.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Memory\InputManager.cpp" />
     <ClCompile Include="Memory\Memory.cpp" />
+    <ClCompile Include="Memory\Registry.cpp" />
+    <ClCompile Include="Memory\Shellcode.cpp" />
     <ClCompile Include="Misc\CheatFunction.cpp" />
     <ClCompile Include="Misc\Input.cpp" />
     <ClCompile Include="Misc\Pch\Pch.cpp" />
@@ -237,7 +240,10 @@
     <ClInclude Include="Graphics\Utility\Colour.h" />
     <ClInclude Include="Graphics\Utility\Font.h" />
     <ClInclude Include="Memory\DMAHandler.h" />
+    <ClInclude Include="Memory\InputManager.h" />
     <ClInclude Include="Memory\Memory.h" />
+    <ClInclude Include="Memory\Registry.h" />
+    <ClInclude Include="Memory\Shellcode.h" />
     <ClInclude Include="Misc\CheatFunction.h" />
     <ClInclude Include="Misc\Input.h" />
     <ClInclude Include="Misc\Pch\Pch.h" />
